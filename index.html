@@ -13,8 +13,10 @@
       <div class="imageContainer">
         <label for="mode">HITAMO UBURYO: </label>
         <select name="mode" id="mode" onchange="changeMode(this.value);">
+          <option value="">select mode</option>
           <option value="u1sb">use one soft button</option>
           <option value="u2sb">use two soft button</option>
+          <option value="u1hb">use one hard button</option>
           <option value="u2hb">use two hard button</option>
           <option value="u4hb">use four hard button</option>
           
@@ -22,9 +24,9 @@
         <img id="babyImg" src="images/rwanda.png" alt="baby" />
       </div>
       <div class="btn-container">
-        <!-- <button id="scriptButton" onclick="ImageRotator('inyuma');">Inyuma</button>
-        <button id="scriptButton" onclick="ImageRotator('imbere');">Imbere</button> -->
-        <button id="scriptButton" onclick="OnekeyRotator();">Komeza</button>
+        <button id="twoButton1" onclick="ImageRotator('inyuma');">Inyuma</button>
+        <button id="twoButton2" onclick="ImageRotator('imbere');">Imbere</button>
+        <button id="oneButton" onclick="OnekeyRotator();">Komeza</button>
       </div>
 
     </div>
