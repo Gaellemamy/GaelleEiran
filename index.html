@@ -8,14 +8,26 @@
   </head>
   <body>
     <div class="container">
-      <h1 id="bighead">Image is rotated in 0 degree</h1>
-      <p class="paragraph">
-        Click the button below to rotate to next degree
-      </p>
-      <div>
-        <img id="babyImg" src="images/baby.jpg" alt="baby" />
+      <h1 id="bighead">IKEREKEZO: 0 DEGREES</h1>
+      <p class="paragraph"><strong>HITAMO UBURYO BWO GUKORESHA</strong></p>
+      <div class="imageContainer">
+        <label for="mode">HITAMO UBURYO: </label>
+        <select name="mode" id="mode" onchange="changeMode(this.value);">
+          <option value="u1sb">use one soft button</option>
+          <option value="u2sb">use two soft button</option>
+          <option value="u2hb">use two hard button</option>
+          <option value="u4hb">use four hard button</option>
+          
+        </select>
+        <img id="babyImg" src="images/rwanda.png" alt="baby" />
       </div>
-      <button id="scriptButton">Image</button>
+      <div class="btn-container">
+        <!-- <button id="scriptButton" onclick="ImageRotator('inyuma');">Inyuma</button>
+        <button id="scriptButton" onclick="ImageRotator('imbere');">Imbere</button> -->
+        <button id="scriptButton" onclick="OnekeyRotator();">Komeza</button>
+      </div>
+
     </div>
   </body>
+  <script src="script.js"></script>
 </html>

@@ -4,15 +4,19 @@
     padding: 0;
 }
 
+
+/* Style container by its classname */
+.container {
+    width: 500px;
+    height: 100vh;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
 /* Style bighead and paragraph independently by it's ID # */
 #bighead,
 .paragraph {
     color: purple;
-}
-
-/* Style container by its classname */
-.container {
-    padding: 20px;
 }
 
 /* style everything inside container, by using atarisk */
@@ -20,24 +24,37 @@
     margin-top: 8px;
 }
 
+.container .imageContainer{
+    width: 410px;
+    height: 410px;
+}
 /* Style Img tag by using its address inside container */
-.container #babyImg {
+.container .imageContainer #babyImg {
+    width: 100%;
+    height: 100%;
     border-radius: 12px;
     cursor: pointer;
 }
-.container #scriptButton{
-    padding: 8px 300px;
+.container .btn-container{
+    display: flex;
+    width: 410px;
+}
+.container .btn-container #scriptButton {
+    margin-top: 20px;
+    padding: 8px;
     border-top: 0;
     border-left: 0;
     border-right: 0;
     border-bottom: 5px solid black;
     background-color: rgba(223, 205, 205, 0.888);
     font-weight: 600;
+    width: 100%;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     cursor: pointer;
 }
-.container #scriptButton:hover{
-    padding: 12px 300px;
+
+.container #scriptButton:hover {
+    padding: 12px;
     background-color: whitesmoke;
 }
